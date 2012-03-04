@@ -7,6 +7,8 @@ set nocompatible
 :set softtabstop=4
 :set shiftwidth=4
 
+set encoding=utf-8
+
 " always show status bar
 set ls=2
 
