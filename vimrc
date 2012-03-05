@@ -132,3 +132,6 @@ nmap <leader>f :FufLine<CR>
 " shortcut to save file
 nmap <leader>w :w<CR>
 imap <leader>w <ESC>:w<CR>
+
+" make some invisible characters visible
+set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
