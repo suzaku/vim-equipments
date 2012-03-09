@@ -113,25 +113,23 @@ let OmniCpp_MayCompleteScope = 0
 let OmniCpp_SelectFirstItem = 0
 
 " debugger keyboard shortcuts
-map <F5> :Dbg over<CR>
-map <F6> :Dbg into<CR>
-map <F7> :Dbg out<CR>
-map <F8> :Dbg here<CR>
-map <F9> :Dbg break<CR>
-map <F10> :Dbg watch<CR>
-map <F11> :Dbg down<CR>
-map <F12> :Dbg up<CR>
+map <F6> /XXX<CR>
 
 let mapleader = ","
 
 " fuzzy finder
+nmap <leader>r :FufRenewCache<CR>
 nmap <leader>e :FufFile<CR>
 nmap <leader>g :FufBufferTag<CR>
 nmap <leader>f :FufLine<CR>
 
-" shortcut to save file
+" other shortcuts
 nmap <leader>w :w<CR>
+nmap <leader>q :q<CR>
 imap <leader>w <ESC>:w<CR>
 
 " make some invisible characters visible
 set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+ab #X #XXX DIRTY
+ab //X //XXX DIRTY
