@@ -12,6 +12,9 @@ set encoding=utf-8
 " always show status bar
 set ls=2
 
+" min num of lines to keep above/below the cursor
+set scrolloff=2
+
 " start the plugin manager
 call pathogen#infect()
 call pathogen#helptags()
@@ -133,3 +136,5 @@ set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
 ab #X #XXX DIRTY
 ab //X //XXX DIRTY
+ab rqf request.get_form_var(
+ab rqu request.user
