@@ -57,7 +57,6 @@ map <F3> :NERDTreeToggle<CR>
 
 " tab navigation
 map tn :tabn<CR>
-map tp :tabp<CR>
 map tm :tabm<CR>
 map tt :tabnew 
 
@@ -115,7 +114,6 @@ let OmniCpp_MayCompleteScope = 0
 " change this behaviour with the OmniCpp_SelectFirstItem option.
 let OmniCpp_SelectFirstItem = 0
 
-" debugger keyboard shortcuts
 map <F6> /XXX<CR>
 
 let mapleader = ","
@@ -123,6 +121,7 @@ let mapleader = ","
 " fuzzy finder
 nmap <leader>r :FufRenewCache<CR>
 nmap <leader>e :FufFile<CR>
+nmap <leader>E :FufFileWithCurrentBufferDir<CR>
 nmap <leader>g :FufBufferTag<CR>
 nmap <leader>f :FufLine<CR>
 
