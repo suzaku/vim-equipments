@@ -24,7 +24,8 @@ filetype plugin on
 filetype indent on
 
 " color
-colorscheme delek
+set background=dark
+colorscheme solarized
 
 " incremental search
 set incsearch
@@ -43,7 +44,7 @@ let generate_tags=1
 " displays taglist results in a vertical window
 let Tlist_Use_Horiz_Window=0
 " toggle Taglist display
-map <F4> :TlistToggle<CR>
+"map <F4> :TlistToggle<CR>
 " various Taglist diplay config:
 let Tlist_Use_Right_Window = 1
 let Tlist_Compact_Format = 1
@@ -54,6 +55,8 @@ let Tlist_Enable_Fold_Column = 0
 
 " NERDTree (better file browser) toggle
 map <F3> :NERDTreeToggle<CR>
+
+map <F4> :MRU<CR>
 
 " tab navigation
 map tn :tabn<CR>
@@ -129,6 +132,7 @@ nmap <leader>f :FufLine<CR>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 imap <leader>w <ESC>:w<CR>
+nmap <leader>l :JSHint<CR>
 
 " make some invisible characters visible
 set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
