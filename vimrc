@@ -137,3 +137,7 @@ ab #X #XXX DIRTY
 ab //X //XXX DIRTY
 ab rqf request.get_form_var(
 ab rqu request.user
+
+let g:user_zen_settings = {
+\  'indentation' : '  '
+\}
