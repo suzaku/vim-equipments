@@ -23,10 +23,6 @@ call pathogen#helptags()
 filetype plugin on
 filetype indent on
 
-" color
-set background=dark
-colorscheme solarized
-
 " incremental search
 set incsearch
 
