@@ -66,9 +66,6 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 " old autocomplete keyboard shortcut
 imap <C-J> <C-X><C-O>
 
-" show pending tasks list
-map <F2> :TaskList<CR>
-
 " removes trailing spaces of python files
 " (and restores cursor position)
 " uncomment the following line to enable 
@@ -77,11 +74,11 @@ map <F2> :TaskList<CR>
 " save as sudo
 ca w!! w !sudo tee "%"
 
-" colors and settings of autocompletition
-highlight Pmenu ctermbg=4 guibg=LightGray
-" highlight PmenuSel ctermbg=8 guibg=DarkBlue guifg=Red
-" highlight PmenuSbar ctermbg=7 guibg=DarkGray
-" highlight PmenuThumb guibg=Black
+set background=dark
+colorscheme solarized
+
+let python_highlight_all=1
+
 " use global scope search
 let OmniCpp_GlobalScopeSearch = 1
 " 0 = namespaces disabled
@@ -139,5 +136,11 @@ ab rqf request.get_form_var(
 ab rqu request.user
 
 let g:user_zen_settings = {
-\  'indentation' : '  '
+\  'indentation' : '    ',
+\  'python': {
+\    'snippets': {
+\      'df' : "def ${cursor}():\n",
+\      'ifm': "if __name__ == '__main__':\n",
+\    }
+\  }
 \}
